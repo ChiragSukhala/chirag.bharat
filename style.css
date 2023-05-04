@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff993314, #FFFFFF, #13880814);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-container {
+    text-align: center;
+}
+
+.name {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2f181893;
+    transition: color 0.5s;
+    animation: colorChange 5s infinite;
+    cursor: pointer;
+}
+
+.name:hover {
+    color: #0992ed;
+    font-size: 58px;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #152f3e;
+    }
+    25% {
+        color: #20201f;
+    }
+    50% {
+        color: #332858;
+    }
+    75% {
+        color: #055581;
+    }
+    100% {
+        color: #0510a4;
+    }
+}
+
+.animated {
+    animation: fadeIn 0.5s ease-in-out, fadeOut 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.stickfigure{
+    cursor:pointer;
+    width:18vw; 
+}
+
+.stickfigure{
+    content:url('stick2.svg');
+}
+
+.stickfigure:hover{
+    content:url('stick3.svg');
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chirag Sukhala</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="https://itsmeh.com/chirag_sukhala">
+        <img class="stickfigure" />
+    </a> 
+    <div class="name-container">
+        <h1 class="name" onclick="animateText()">Chirag Sukhala</h1>
+    </div>
+
+    <script>
+        const nameElement = document.querySelector('.name');
+
+        function animateText() {
+            nameElement.classList.add('animated');
+            this.changeLanguage();
+            setTimeout(() => {
+                nameElement.classList.remove('animated');
+            }, 1000);
+        }
+
+        let currentLanguage = 'english';
+
+        function changeLanguage() {
+            if (currentLanguage === 'english') {
+                nameElement.innerText = 'चिराग सुखला';
+                currentLanguage = 'hindi';
+            } else if (currentLanguage === 'hindi') {
+                nameElement.innerText = 'ચિરાગ સુખાળા';
+                currentLanguage = 'gujarati';
+            } else if (currentLanguage === 'gujarati') {
+                nameElement.innerText = 'ಚಿರಾಗ್ ಸುಖಾಲಾ';
+                currentLanguage = 'kannada';
+            } else if (currentLanguage === 'kannada') {
+                nameElement.innerText = 'చిరాగ్ సుఖాలా';
+                currentLanguage = 'telugu';
+            } else if (currentLanguage === 'telugu') {
+                nameElement.innerText = 'চিরাগ সুখালা';
+                currentLanguage = 'bengali';
+            } else if (currentLanguage === 'bengali') {
+                nameElement.innerText = 'சிராக் சுகாலா';
+                currentLanguage = 'tamil';
+            } else if (currentLanguage === 'tamil') {
+                nameElement.innerText = 'ਚਿਰਾਗ ਸੁਖਾਲਾ';
+                currentLanguage = 'punjabi';
+            } else if (currentLanguage === 'punjabi') {
+                nameElement.innerText = 'ଚିରାଗ ସୁଖାଳା';
+                currentLanguage = 'odia';
+            } else if (currentLanguage === 'odia') {
+                nameElement.innerText = 'चिराग सुखाला';
+                currentLanguage = 'hindi';
+            }
+        }
+    </script>
+</body>
+</html>
